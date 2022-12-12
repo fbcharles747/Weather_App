@@ -4,10 +4,11 @@
 }
 .weather-card {
   /* max-width: 540px; */
-  width: 300px;
+  display: flex;
+  flex-direction: column;
+  width: auto;
   border-radius: 6px;
-  flex-direction: row;
-  padding: 20px 20px;
+  /* padding: 20px 20px; */
   background-color: #333;
   color: #fff;
   align-items: center;
@@ -15,9 +16,14 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.weather-top,
+.weather-top {
+  align-items: center;
+  width: 100%;
+}
+
 .weather-bottom {
-  display: flex;
+  /* display: flex; */
+  width: 100%;
   align-items: center;
   justify-content: space-between;
 }

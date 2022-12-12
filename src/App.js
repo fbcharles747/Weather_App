@@ -5,6 +5,7 @@ import CurrentWeather from "./Components/current-weather/current-weather";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { WEATHER_API_KEY, WEATHER_API_URL } from "./api";
 import { useState } from "react";
+import Forcast from "./Components/forcast-weather/forcast";
 
 function App() {
   const [currentWeather, setCurrentWeather] = useState(null);
@@ -43,8 +44,18 @@ function App() {
       </div>
       <div className="row justify-content-md-center">
         <div className="col-4">
-          <CurrentWeather />
+          {currentWeather && (
+            <CurrentWeather
+              main={currentWeather.main}
+              wind={currentWeather.wind}
+              weather={currentWeather.weather[0]}
+              city={currentWeather.city}
+            />
+          )}
         </div>
+      </div>
+      <div className="row">
+        {forcastWeather && <Forcast datas={forcastWeather.list} />}
       </div>
     </div>
   );

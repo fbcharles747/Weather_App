@@ -1,0 +1,18 @@
+.forcast-card {
+  text-align: center;
+  align-items: center;
+  background-color: #bddaec;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+}
+.group {
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+}
+
+.weekday {
+  font-weight: 600;
+  width: 100%;
+}
+
+.forcast-temp {
+  font-size: 30px;
+}
