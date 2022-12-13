@@ -38,7 +38,7 @@ function App() {
     console.log(forcastWeather);
   }
   return (
-    <div className="container ">
+    <div className="container-fluid ">
       <div className="row ">
         <Search onSearchChange={handleOnSearchChange} />
       </div>
