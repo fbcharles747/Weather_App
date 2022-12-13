@@ -19,10 +19,7 @@ export default function CurrentWeather(props) {
             <p className="weather-decription">{main}</p>
           </div>
           <div className="col">
-            <img
-              src={`http://openweathermap.org/img/wn/${icon}.png`}
-              className="weatherIcon"
-            />
+            <img src={`icons/${icon}.png`} className="weatherIcon" />
           </div>
         </div>
       </div>

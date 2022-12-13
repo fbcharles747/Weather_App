@@ -13,7 +13,7 @@ export default function ForcastCard(props) {
     <div className="card forcast-card border-light">
       <div className="card-header weekday">{weekday[day]}</div>
       <img
-        src={`http://openweathermap.org/img/wn/${icon}.png`}
+        src={`icons/${icon}.png`}
         class="card-img-top weatherIcon"
         alt="weather"
       />
